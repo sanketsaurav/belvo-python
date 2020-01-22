@@ -1,0 +1,18 @@
+version = 1
+
+test_patterns = [
+  'tests/**',
+]
+
+exclude_patterns = [
+  'docs/**',
+]
+
+[[ analyzers ]]
+  name = 'python'
+  enabled = true
+  dependency_file_paths = ['requirements/base.txt']
+
+  [analyzers.meta]
+    max_line_length = 100
+
